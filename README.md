@@ -121,3 +121,4 @@ This project is licensed under the MIT License – free to use, modify, and dist
 Himanshi – Developer, AI Engineer
 
 Open for collaboration and research contributions.
+Deployed link: https://agri-ai-yeum.vercel.app/
