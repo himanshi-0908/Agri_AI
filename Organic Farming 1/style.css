@@ -1,0 +1,1081 @@
+.desktop-organic-farming,
+.desktop-organic-farming * {
+  box-sizing: border-box;
+}
+.desktop-organic-farming {
+  background: #c7cca8;
+  height: 3350px;
+  position: relative;
+  overflow: hidden;
+}
+.sign-in {
+  color: #ffffff;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1824px;
+  top: 20px;
+  width: 81px;
+  height: 24px;
+}
+.eng {
+  color: #ffffff;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1656px;
+  top: 20px;
+  width: 46px;
+  height: 24px;
+}
+.user {
+  width: 36px;
+  height: 30px;
+  position: absolute;
+  left: 1786px;
+  top: 17px;
+  object-fit: cover;
+}
+.earth-globe {
+  width: 48px;
+  height: 34px;
+  position: absolute;
+  left: 1614px;
+  top: 13px;
+  object-fit: cover;
+}
+.rectangle-69 {
+  background: #171941;
+  width: 1527px;
+  height: 248px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-70 {
+  background: #d9d9d9;
+  width: 270px;
+  height: 48px;
+  position: absolute;
+  left: 1628px;
+  top: 133px;
+}
+._0-items {
+  color: #000000;
+  text-align: left;
+  font-family: "Jost-Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  position: absolute;
+  left: 1699px;
+  top: 133px;
+  width: 102px;
+  height: 48px;
+}
+.line-7 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 48px;
+  height: 0px;
+  position: absolute;
+  left: 1801px;
+  top: 133px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.rs-00 {
+  color: #a934b4;
+  text-align: left;
+  font-family: "Jost-Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  position: absolute;
+  left: 1814px;
+  top: 134px;
+}
+.shopping-bag {
+  width: 63px;
+  height: 49px;
+  position: absolute;
+  left: 1628px;
+  top: 135px;
+  object-fit: cover;
+}
+.rectangle-219 {
+  background: #171941;
+  border-style: solid;
+  border-color: #fffbfb;
+  border-width: 2px;
+  width: 1468px;
+  height: 79px;
+  position: absolute;
+  left: 34px;
+  top: 17px;
+}
+.email {
+  width: 68px;
+  height: 34px;
+  position: absolute;
+  left: 32px;
+  top: 35px;
+  object-fit: cover;
+}
+.info-agriai-com {
+  color: #ffffff;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 106px;
+  top: 40px;
+  width: 276px;
+  height: 24px;
+}
+._91-200-352-4121 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 492px;
+  top: 40px;
+  width: 174px;
+  height: 24px;
+}
+.phone {
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  left: 450px;
+  top: 38px;
+  object-fit: cover;
+}
+.ellipse-13 {
+  background: rgba(217, 217, 217, 0);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #f8f3f3;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 448px;
+  top: 37px;
+}
+.user-male {
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  left: 1435px;
+  top: 35px;
+  object-fit: cover;
+}
+.screenshot-440-removebg-preview-3 {
+  width: 287px;
+  height: 196px;
+  position: absolute;
+  left: 34px;
+  top: 90px;
+  object-fit: cover;
+}
+.organic-farming {
+  color: #e904ff;
+  text-align: left;
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 870px;
+  top: 159px;
+  width: 317px;
+  height: 41px;
+}
+.expand-arrow {
+  width: 52px;
+  height: 48px;
+  position: absolute;
+  left: 986px;
+  top: 200px;
+  object-fit: cover;
+}
+.search {
+  width: 52px;
+  height: 41px;
+  position: absolute;
+  left: 1370px;
+  top: 158px;
+  object-fit: cover;
+}
+.shopping-cart {
+  width: 62px;
+  height: 47px;
+  position: absolute;
+  left: 1430px;
+  top: 154px;
+  object-fit: cover;
+}
+.whats-app-image-2024-12-08-at-14-46-49-e-97-c-694-a-1 {
+  width: 1530px;
+  height: 911px;
+  position: absolute;
+  left: 3px;
+  top: 248px;
+  object-fit: cover;
+}
+.organic {
+  color: #111010;
+  text-align: left;
+  font-family: "Jost-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: 612px;
+  top: 395px;
+  width: 311px;
+  height: 92px;
+}
+.farming {
+  color: #181717;
+  text-align: left;
+  font-family: "Kranky-Regular", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 558px;
+  top: 463px;
+  width: 440px;
+  height: 122px;
+}
+.why-organic {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 79px;
+  top: 662px;
+  width: 299px;
+  height: 41px;
+}
+.research {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 391px;
+  top: 662px;
+  width: 119px;
+  height: 41px;
+}
+.resources {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 635px;
+  top: 662px;
+  width: 156px;
+  height: 41px;
+}
+.advocacy {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 888px;
+  top: 662px;
+  width: 134px;
+  height: 41px;
+}
+.news {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 1150px;
+  top: 662px;
+  width: 88px;
+  height: 41px;
+}
+.about {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 1368px;
+  top: 662px;
+  width: 88px;
+  height: 41px;
+}
+.forward {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 184.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.forward2 {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 467.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.forward3 {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 715.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.forward4 {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 964.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.forward5 {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 1202.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.forward6 {
+  width: 54px;
+  height: 33.2px;
+  position: absolute;
+  left: 1423.2px;
+  top: 687px;
+  transform-origin: 0 0;
+  transform: rotate(89.296deg) scale(1, 1);
+  object-fit: cover;
+}
+.screenshot-2024-12-08-153641-transformed {
+  border-radius: 1px;
+  width: 336px;
+  height: 476px;
+  position: absolute;
+  left: 89px;
+  top: 2429px;
+  object-fit: cover;
+}
+.whats-app-image-2024-12-08-at-15-04-07-240-b-1637-1 {
+  width: 328px;
+  height: 368px;
+  position: absolute;
+  left: 89px;
+  top: 837px;
+  object-fit: cover;
+}
+.munshi-rauniyar {
+  color: #000000;
+  text-align: left;
+  font-family: "KottaOne-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 121px;
+  top: 1216px;
+  width: 270px;
+  height: 33px;
+}
+.roopani-devi {
+  color: #000000;
+  text-align: left;
+  font-family: "KottaOne-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 155px;
+  top: 1749px;
+  width: 202px;
+  height: 33px;
+}
+.Reena-kumari {
+  color: #000000;
+  text-align: left;
+  font-family: "KottaOne-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 131px;
+  top: 2311px;
+  width: 246px;
+  height: 33px;
+}
+.devdas-sharma {
+  color: #000000;
+  text-align: left;
+  font-family: "KottaOne-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 130px;
+  top: 2916px;
+  width: 246px;
+  height: 33px;
+}
+.switching-to-organic-farming-has-tripled-our-profits-within-just-a-year {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 825px;
+  width: 927px;
+  height: 44px;
+}
+.our-organic-produce-attracts-premium-buyers-significantly-boosting-revenue {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 1330px;
+  width: 892px;
+  height: 80px;
+}
+.our-organic-journey-has-transformed-every-harvest-into-a-financial-success {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 1847px;
+  width: 892px;
+  height: 80px;
+}
+.with-healthier-soil-and-happier-customers-we-re-reaping-both-profits-and-sustainability {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 488px;
+  top: 2431px;
+  width: 892px;
+  height: 80px;
+}
+.line-16 {
+  margin-top: 15px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 345px;
+  height: 0px;
+  position: absolute;
+  left: 485px;
+  top: 898px;
+}
+.line-17 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 345px;
+  height: 0px;
+  position: absolute;
+  left: 485px;
+  top: 1437px;
+}
+.line-18 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 345px;
+  height: 0px;
+  position: absolute;
+  left: 488px;
+  top: 1954px;
+}
+.line-19 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 345px;
+  height: 0px;
+  position: absolute;
+  left: 488px;
+  top: 2545px;
+}
+.thanks-to-agriai-we-discovered-the-perfect-strategies-for-transitioning-to-organic-farming-the-platform-provided-us-with-expert-guidance-on-crop-selection-sustainable-practices-and-market-insights-by-leveraging-their-advanced-tools-and-resources-we-optimized-our-farming-techniques-and-connected-directly-with-premium-buyers-within-just-12-months-our-revenue-skyrocketed-as-we-tapped-into-the-high-demand-organic-market-agriai-s-smart-solutions-simplified-the-process-reduced-costs-and-ensured-consistent-quality-making-profitability-easier-than-ever-today-we-proudly-attribute-our-success-to-the-innovative-support-offered-by-agriai {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 927px;
+  width: 794px;
+  height: 225px;
+}
+.before-agriai-i-struggled-to-sell-my-organic-vegetables-in-my-small-village-as-a-50-year-old-farmer-i-never-thought-i-could-reach-premium-buyers-outside-my-community-but-with-agriai-s-help-i-listed-my-produce-online-and-found-customers-willing-to-pay-good-prices-for-my-fresh-natural-vegetables-the-extra-money-has-changed-my-life-i-can-now-afford-better-seeds-pay-for-my-grandchildren-s-education-and-even-save-for-the-future-agriai-has-turned-my-small-farm-into-a-source-of-hope-and-pride-for-my-family {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 1484px;
+  width: 794px;
+  height: 150px;
+}
+.as-a-housewife-from-a-small-village-i-never-imagined-i-could-turn-our-family-s-small-piece-of-land-into-such-a-profitable-venture-but-with-agriai-s-help-everything-changed-their-tools-guided-me-on-improving-soil-health-and-growing-organic-crops-that-people-truly-value-agriai-also-connected-me-with-buyers-who-paid-fair-prices-for-our-produce-which-made-a-big-difference-for-my-family-the-platform-was-simple-to-use-even-for-someone-like-me-who-had-no-prior-experience-with-technology-now-every-harvest-brings-us-not-only-food-but-financial-stability-thanks-to-agriai-i-feel-proud-to-contribute-to-my-family-s-future-while-keeping-our-farming-sustainable {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 2019px;
+  width: 794px;
+  height: 225px;
+}
+.thanks-to-agriai-we-ve-revolutionized-our-farming-practices-and-maximized-our-earnings-by-connecting-with-buyers-directly-through-the-platform-we-ve-eliminated-middlemen-and-secured-higher-prices-for-our-organic-produce-agriai-s-advanced-tools-helped-us-optimize-crop-planning-and-monitor-soil-health-reducing-waste-and-cutting-costs-our-profits-have-doubled-within-months-as-the-platform-matched-us-with-premium-markets-and-customers-who-value-quality-the-insights-and-analytics-provided-by-agriai-have-been-game-changers-allowing-us-to-make-smarter-decisions-that-not-only-increased-revenue-but-also-ensured-long-term-sustainability-for-our-farm {
+  color: #000000;
+  text-align: left;
+  font-family: "Kreon-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 485px;
+  top: 2601px;
+  width: 794px;
+  height: 225px;
+}
+.rectangle-236 {
+  background: #d9d9d9;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 257px;
+  height: 37px;
+  position: absolute;
+  left: 488px;
+  top: 1199px;
+}
+.rectangle-237 {
+  background: #d9d9d9;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 257px;
+  height: 37px;
+  position: absolute;
+  left: 488px;
+  top: 1685px;
+}
+.rectangle-239 {
+  background: #d9d9d9;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 257px;
+  height: 37px;
+  position: absolute;
+  left: 488px;
+  top: 2263px;
+}
+.rectangle-240 {
+  background: #d9d9d9;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 257px;
+  height: 37px;
+  position: absolute;
+  left: 488px;
+  top: 2853px;
+}
+.found-helpful {
+  color: #000000;
+  text-align: left;
+  font-family: "Krub-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 497px;
+  top: 1201px;
+  width: 155px;
+  height: 27px;
+}
+.found-helpful2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Krub-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 497px;
+  top: 1690px;
+  width: 155px;
+  height: 27px;
+}
+.found-helpful3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Krub-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 497px;
+  top: 2268px;
+  width: 155px;
+  height: 27px;
+}
+.found-helpful4 {
+  color: #000000;
+  text-align: left;
+  font-family: "Krub-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 497px;
+  top: 2858px;
+  width: 155px;
+  height: 27px;
+}
+.thumbs-down {
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  left: 700px;
+  top: 1203px;
+  object-fit: cover;
+}
+.thumbs-down2 {
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  left: 705px;
+  top: 1691px;
+  object-fit: cover;
+}
+.thumbs-down3 {
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  left: 707px;
+  top: 2268px;
+  object-fit: cover;
+}
+.thumbs-down4 {
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  left: 705px;
+  top: 2857px;
+  object-fit: cover;
+}
+.thumbs-up {
+  width: 35px;
+  height: 32px;
+  position: absolute;
+  left: 661px;
+  top: 1201px;
+  object-fit: cover;
+}
+.thumbs-up2 {
+  width: 35px;
+  height: 32px;
+  position: absolute;
+  left: 661px;
+  top: 1690px;
+  object-fit: cover;
+}
+.thumbs-up3 {
+  width: 35px;
+  height: 32px;
+  position: absolute;
+  left: 661px;
+  top: 2263px;
+  object-fit: cover;
+}
+.thumbs-up4 {
+  width: 35px;
+  height: 32px;
+  position: absolute;
+  left: 661px;
+  top: 2855px;
+  object-fit: cover;
+}
+.file-2024-12-08-09-49-29-1 {
+  width: 328px;
+  height: 408px;
+  position: absolute;
+  left: 89px;
+  top: 1330px;
+  object-fit: cover;
+}
+.whats-app-image-2024-12-08-at-15-35-00-1-f-0-aa-490-1 {
+  width: 336px;
+  height: 437px;
+  position: absolute;
+  left: 89px;
+  top: 1863px;
+  object-fit: cover;
+}
+.rectangle-238 {
+  background: rgba(217, 217, 217, 0.49);
+  border-radius: 10px;
+  width: 31px;
+  height: 63px;
+  position: absolute;
+  left: 361px;
+  top: 2010px;
+}
+.screenshot-440-removebg-preview-4 {
+  width: 39.44px;
+  height: 20px;
+  position: absolute;
+  left: 359.09px;
+  top: 2028px;
+  transform-origin: 0 0;
+  transform: rotate(0.257deg) scale(1, 1);
+  object-fit: cover;
+}
+.rectangle-241 {
+  background: #171941;
+  width: 1525px;
+  height: 335px;
+  position: absolute;
+  left: 0px;
+  top: 3015px;
+}
+.connect-with-us {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Hanuman-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 153px;
+  top: 3176px;
+  width: 357px;
+  height: 53px;
+}
+.facebook {
+  width: 86px;
+  height: 76px;
+  position: absolute;
+  left: 149px;
+  top: 3247px;
+  object-fit: cover;
+}
+.twitter-x {
+  width: 77px;
+  height: 63px;
+  position: absolute;
+  left: 277px;
+  top: 3254px;
+  object-fit: cover;
+}
+.instagram {
+  width: 76px;
+  height: 85px;
+  position: absolute;
+  left: 396px;
+  top: 3243px;
+  object-fit: cover;
+}
+.privacy-policy {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Hanuman-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 674px;
+  top: 3058px;
+  width: 275px;
+  height: 53px;
+}
+.faq-s {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Hanuman-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 1353px;
+  top: 3063px;
+  width: 175px;
+  height: 53px;
+}
+.terms-condition {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Hanuman-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 89px;
+  top: 3068px;
+  width: 354px;
+  height: 53px;
+}
+.copyright-2024-agroai {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Hanuman-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 1087px;
+  top: 3265px;
+  width: 441px;
+  height: 53px;
+}
+.copyright-all-rights-reserved {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 1263px;
+  top: 3267px;
+  object-fit: cover;
+}
+.rectangle-242 {
+  background: #d9d9d9;
+  width: 1420px;
+  height: 2226px;
+  position: absolute;
+  left: 54px;
+  top: 757px;
+  mix-blend-mode: soft-light;
+}
+.component-10 {
+  width: 94px;
+  height: 34px;
+  position: absolute;
+  left: 1328px;
+  top: 30px;
+}
+.component-5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.earth-globe2 {
+  width: 51.06%;
+  height: 100%;
+  position: absolute;
+  right: 48.94%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.eng2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 51.06%;
+  width: 48.94%;
+  bottom: 14.71%;
+  top: 14.71%;
+  height: 70.59%;
+}
+.component-25 {
+  width: 96px;
+  height: 41px;
+  position: absolute;
+  left: 352px;
+  top: 159px;
+}
+.home {
+  color: #fef8ff;
+  text-align: left;
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.component-14-about-us {
+  width: 154px;
+  height: 41px;
+  position: absolute;
+  left: 484px;
+  top: 163px;
+}
+.component-26 {
+  width: 154px;
+  height: 41px;
+  position: absolute;
+  left: 492px;
+  top: 159px;
+}
+.about-us {
+  color: #fffdff;
+  text-align: left;
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 200px;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.component-22 {
+  width: 91px;
+  height: 41px;
+  position: absolute;
+  left: 711px;
+  top: 159px;
+}
+.shop {
+  color: #fff9ff;
+  text-align: left;
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.component-252 {
+  width: 132px;
+  height: 41px;
+  position: absolute;
+  left: 1213px;
+  top: 159px;
+}
+.ai-chat {
+  color: #fff9ff;
+  text-align: left;
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.component-22 {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.component-22, .component-22 * {
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.component-22:hover, .component-22:hover * {
+  color: #e904ff; /* Hover color */
+}
+.component-25 {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.component-25, .component-25 * {
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.component-25:hover, .component-25:hover * {
+  color: #e904ff; /* Hover color */
+}
+
+.component-26 {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.component-26, .component-26 * {
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.component-26:hover, .component-26:hover * {
+  color: #e904ff; /* Hover color */
+}
+.component-252 {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.component-252, .component-252 * {
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.component-252:hover, .component-252:hover * {
+  color: #e904ff; /* Hover color */
+}
