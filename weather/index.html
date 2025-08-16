@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Weather Forecasting System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+        }
+
+        .header h1 {
+            color: #2e7d32;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: none;
+        }
+
+        .header p {
+            color: #4CAF50;
+            font-size: 1.1em;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .search-input {
+            padding: 15px 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 25px;
+            width: 300px;
+            font-size: 16px;
+            background: white;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #2e7d32;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .search-btn {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .search-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .current-weather, .forecast-container {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+            border: 2px solid #e8f5e8;
+            transition: transform 0.3s ease;
+        }
+
+        .current-weather:hover, .forecast-container:hover {
+            transform: translateY(-5px);
+            border-color: #4CAF50;
+        }
+
+        .current-weather h2, .forecast-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .weather-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .weather-icon {
+            font-size: 4em;
+            margin-right: 20px;
+        }
+
+        .temp-info {
+            text-align: center;
+        }
+
+        .temperature {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #e74c3c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            text-transform: capitalize;
+            margin-top: 5px;
+        }
+
+        .weather-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .detail-item {
+            background: linear-gradient(135deg, #4CAF50 0%, #2e7d32 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .detail-item:hover {
+            transform: scale(1.05);
+        }
+
+        .detail-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .forecast-days {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .forecast-day {
+            background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .forecast-day:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(76, 175, 80, 0.3);
+            border-color: #4CAF50;
+        }
+
+        .day-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .day-icon {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        .day-temp {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .agricultural-insights {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+            border: 2px solid #e8f5e8;
+        }
+
+        .agricultural-insights h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .insight-card {
+            background: linear-gradient(135deg, #4CAF50 0%, #388e3c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .insight-card:hover {
+            transform: translateY(-5px);
+            border-color: #2e7d32;
+            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.2);
+        }
+
+        .insight-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .insight-content {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            color: #4CAF50;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 4px solid #e8f5e8;
+            border-radius: 50%;
+            border-top: 4px solid #4CAF50;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .weather-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .search-input {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌾 Agricultural Weather Forecasting System</h1>
+            <p>Smart weather insights for modern farming</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Enter city name or coordinates..." id="locationInput">
+            <button class="search-btn" onclick="getWeather()">🔍 Get Weather</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="weather-grid" id="weatherContent" style="display: none;">
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-main">
+                    <div class="weather-icon" id="currentIcon">☀️</div>
+                    <div class="temp-info">
+                        <div class="temperature" id="currentTemp">--°</div>
+                        <div class="description" id="currentDesc">Loading...</div>
+                        <div id="locationName" style="color: #7f8c8d; margin-top: 10px;"></div>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Humidity</div>
+                        <div class="detail-value" id="humidity">--%</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Wind Speed</div>
+                        <div class="detail-value" id="windSpeed">-- km/h</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Pressure</div>
+                        <div class="detail-value" id="pressure">-- hPa</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Visibility</div>
+                        <div class="detail-value" id="visibility">-- km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">UV Index</div>
+                        <div class="detail-value" id="uvIndex">--</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Feels Like</div>
+                        <div class="detail-value" id="feelsLike">--°</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-days" id="forecastDays"></div>
+            </div>
+        </div>
+
+        <div class="agricultural-insights" id="agriInsights" style="display: none;">
+            <h2>🚜 Agricultural Insights</h2>
+            <div class="insights-grid" id="insightsContent"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_KEY = 'demo_key'; // Replace with actual API key
+        
+        // Weather condition to icon mapping
+        const weatherIcons = {
+            'clear sky': '☀️',
+            'few clouds': '🌤️',
+            'scattered clouds': '⛅',
+            'broken clouds': '☁️',
+            'overcast clouds': '☁️',
+            'shower rain': '🌦️',
+            'rain': '🌧️',
+            'thunderstorm': '⛈️',
+            'snow': '❄️',
+            'mist': '🌫️',
+            'fog': '🌫️',
+            'haze': '🌫️',
+            'dust': '🌪️',
+            'sand': '🌪️',
+            'tornado': '🌪️'
+        };
+
+        // Sample weather data for demonstration
+        const sampleWeatherData = {
+            current: {
+                location: 'Greater Noida, UP',
+                temperature: 28,
+                description: 'partly cloudy',
+                humidity: 65,
+                windSpeed: 12,
+                pressure: 1013,
+                visibility: 10,
+                uvIndex: 6,
+                feelsLike: 32
+            },
+            forecast: [
+                { day: 'Today', icon: '🌤️', high: 30, low: 22, description: 'Partly Cloudy' },
+                { day: 'Tomorrow', icon: '🌧️', high: 26, low: 18, description: 'Light Rain' },
+                { day: 'Wed', icon: '⛅', high: 28, low: 20, description: 'Cloudy' },
+                { day: 'Thu', icon: '☀️', high: 32, low: 24, description: 'Sunny' },
+                { day: 'Fri', icon: '🌦️', high: 27, low: 19, description: 'Showers' }
+            ]
+        };
+
+        function getWeatherIcon(description) {
+            const desc = description.toLowerCase();
+            for (const [key, icon] of Object.entries(weatherIcons)) {
+                if (desc.includes(key)) {
+                    return icon;
+                }
+            }
+            return '🌤️'; // Default icon
+        }
+
+        function generateAgriculturalInsights(weatherData) {
+            const insights = [];
+            const temp = weatherData.current.temperature;
+            const humidity = weatherData.current.humidity;
+            const windSpeed = weatherData.current.windSpeed;
+            const description = weatherData.current.description.toLowerCase();
+
+            // Temperature-based insights
+            if (temp > 35) {
+                insights.push({
+                    title: '🌡️ High Temperature Alert',
+                    content: 'Extreme heat detected. Increase irrigation frequency and provide shade for livestock. Consider harvesting early morning or evening.'
+                });
+            } else if (temp < 10) {
+                insights.push({
+                    title: '❄️ Cold Weather Warning',
+                    content: 'Low temperatures may affect crop growth. Consider frost protection measures and delay planting of sensitive crops.'
+                });
+            } else if (temp >= 20 && temp <= 30) {
+                insights.push({
+                    title: '🌱 Optimal Growing Conditions',
+                    content: 'Temperature range is ideal for most crops. Good time for planting and outdoor agricultural activities.'
+                });
+            }
+
+            // Humidity-based insights
+            if (humidity > 80) {
+                insights.push({
+                    title: '💧 High Humidity Alert',
+                    content: 'High humidity increases disease risk. Monitor crops for fungal infections and ensure proper ventilation in greenhouses.'
+                });
+            } else if (humidity < 30) {
+                insights.push({
+                    title: '🏜️ Low Humidity Warning',
+                    content: 'Dry conditions detected. Increase irrigation and consider mulching to retain soil moisture.'
+                });
+            }
+
+            // Wind-based insights
+            if (windSpeed > 25) {
+                insights.push({
+                    title: '💨 High Wind Warning',
+                    content: 'Strong winds may damage crops. Secure greenhouse structures and delay spraying operations.'
+                });
+            }
+
+            // Weather condition insights
+            if (description.includes('rain')) {
+                insights.push({
+                    title: '🌧️ Rainfall Detected',
+                    content: 'Natural irrigation expected. Delay manual watering and monitor for waterlogging in low-lying areas.'
+                });
+            }
+
+            if (description.includes('clear') || description.includes('sunny')) {
+                insights.push({
+                    title: '☀️ Clear Weather Advantage',
+                    content: 'Excellent conditions for outdoor work, harvesting, and drying crops. Ideal for pesticide and fertilizer application.'
+                });
+            }
+
+            // Add soil and irrigation insights
+            insights.push({
+                title: '🚰 Irrigation Recommendation',
+                content: `Based on current conditions, adjust irrigation schedule. Soil moisture should be monitored especially during ${temp > 25 ? 'hot' : 'cool'} weather.`
+            });
+
+            return insights;
+        }
+
+        function displayWeatherData(data) {
+            // Current weather
+            document.getElementById('currentTemp').textContent = `${data.current.temperature}°C`;
+            document.getElementById('currentDesc').textContent = data.current.description;
+            document.getElementById('currentIcon').textContent = getWeatherIcon(data.current.description);
+            document.getElementById('locationName').textContent = data.current.location;
+            
+            document.getElementById('humidity').textContent = `${data.current.humidity}%`;
+            document.getElementById('windSpeed').textContent = `${data.current.windSpeed} km/h`;
+            document.getElementById('pressure').textContent = `${data.current.pressure} hPa`;
+            document.getElementById('visibility').textContent = `${data.current.visibility} km`;
+            document.getElementById('uvIndex').textContent = data.current.uvIndex;
+            document.getElementById('feelsLike').textContent = `${data.current.feelsLike}°C`;
+
+            // Forecast
+            const forecastContainer = document.getElementById('forecastDays');
+            forecastContainer.innerHTML = '';
+            
+            data.forecast.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'forecast-day';
+                dayElement.innerHTML = `
+                    <div class="day-name">${day.day}</div>
+                    <div class="day-icon">${day.icon}</div>
+                    <div style="font-size: 0.9em; margin: 5px 0;">${day.description}</div>
+                    <div class="day-temp">${day.high}° / ${day.low}°</div>
+                `;
+                forecastContainer.appendChild(dayElement);
+            });
+
+            // Agricultural insights
+            const insights = generateAgriculturalInsights(data);
+            const insightsContainer = document.getElementById('insightsContent');
+            insightsContainer.innerHTML = '';
+            
+            insights.forEach(insight => {
+                const insightElement = document.createElement('div');
+                insightElement.className = 'insight-card';
+                insightElement.innerHTML = `
+                    <div class="insight-title">${insight.title}</div>
+                    <div class="insight-content">${insight.content}</div>
+                `;
+                insightsContainer.appendChild(insightElement);
+            });
+        }
+
+        function showError(message) {
+            const errorElement = document.getElementById('error');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+            document.getElementById('weatherContent').style.display = 'none';
+            document.getElementById('agriInsights').style.display = 'none';
+        }
+
+        function hideError() {
+            document.getElementById('error').style.display = 'none';
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('weatherContent').style.display = 'none';
+            document.getElementById('agriInsights').style.display = 'none';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        async function getWeather() {
+            const location = document.getElementById('locationInput').value.trim();
+            
+            if (!location) {
+                showError('Please enter a location');
+                return;
+            }
+
+            hideError();
+            showLoading();
+
+            try {
+                // For demonstration, we'll use sample data
+                // In production, you would make API calls to weather services
+                setTimeout(() => {
+                    const weatherData = {
+                        ...sampleWeatherData,
+                        current: {
+                            ...sampleWeatherData.current,
+                            location: location
+                        }
+                    };
+                    
+                    // Add some variation based on location input
+                    const variation = location.length % 10;
+                    weatherData.current.temperature += variation - 5;
+                    weatherData.current.humidity += variation * 2;
+                    
+                    displayWeatherData(weatherData);
+                    hideLoading();
+                    document.getElementById('weatherContent').style.display = 'grid';
+                    document.getElementById('agriInsights').style.display = 'block';
+                }, 1500);
+
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+                hideLoading();
+                showError('Failed to fetch weather data. Please try again.');
+            }
+        }
+
+        // Handle Enter key in search input
+        document.getElementById('locationInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                getWeather();
+            }
+        });
+
+        // Load default weather for Greater Noida on page load
+        window.addEventListener('load', function() {
+            document.getElementById('locationInput').value = 'Greater Noida, UP';
+            setTimeout(getWeather, 1000);
+        });
+
+        // Auto-refresh weather data every 10 minutes
+        setInterval(function() {
+            if (document.getElementById('weatherContent').style.display !== 'none') {
+                getWeather();
+            }
+        }, 600000); // 10 minutes
+    </script>
+</body>
+</html>
